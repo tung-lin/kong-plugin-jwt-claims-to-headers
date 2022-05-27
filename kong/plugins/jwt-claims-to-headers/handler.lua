@@ -4,7 +4,8 @@ local jwtParser = require "kong.plugins.jwt.jwt_parser"
 local JwtClaimsToHeadersHandler = BasePlugin:extend()
 
 -- ensure the priority is lower than the Jwt plugin, which has a priority of 1005
-JwtClaimsToHeadersHandler.PRIORITY = 10
+-- JwtClaimsToHeadersHandler.PRIORITY = 10
+JwtClaimsToHeadersHandler.PRIORITY = 910
 
 -- local functions ------------------------------
 
